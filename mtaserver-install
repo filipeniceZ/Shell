@@ -81,5 +81,6 @@ echo "INSTALANDO BIBLIOTECAS NECESSARIAS..."
 apt-get install libreadline5 -y
 apt-get install libncursesw5 -y
 apt-get install lib32ncursesw5 -y
+sudo ln -s /usr/lib/libtinfo.so.6 /usr/lib/libtinfo.so.5
 
 echo "TUDO JÁ FOI INSTALADO E O SEU SERVIDOR ESTÁ PRONTO PARA O USO !"
