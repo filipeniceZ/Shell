@@ -68,10 +68,18 @@ main()
     clean
 
     if ((1<<32)); then # 64 bits
-        echo "Installation ready! Use ./mta-server64 to initialize server"
+        echo "Instalação pronta! Digite ./mta-server64 para ligar o servidor"
     else
-        echo "Installation ready! Use ./mta-server to initialize server"
+        echo "Instalação pronta! Digite ./mta-server para ligar o servidor"
     fi
 }
 
 main # calling program entry point
+
+echo "INSTALANDO BIBLIOTECAS NECESSARIAS..."
+
+apt-get install libreadline5 -y
+apt-get install libncursesw5 -y
+apt-get install lib32ncursesw5 -y
+
+echo "TUDO JÁ FOI INSTALADO E O SEU SERVIDOR ESTÁ PRONTO PARA O USO !"
