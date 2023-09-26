@@ -6,8 +6,8 @@
 #  modify it as desired, you can even improve it if you want.                  #
 #==============================================================================#
 
-echo -e "SCRIPT INSTALL \033[01;32mMTA SERVER LINUX\033[01;37m!"
-echo Adquira sua VPS em: nicehosting.com.br/vps.html
+echo -e "SCRIPT INSTALL \033[01;32mMTA SERVER 1.6 LINUX\033[01;37m!"
+echo Adquira sua VPS em: nicehosting.com.br/vps
 
 apt update && apt upgrade -y
 apt install unzip -y
@@ -24,7 +24,7 @@ getArchitecture()
 
 downloadFiles()
 {
-    wget https://linux.mtasa.com/dl/multitheftauto_linux${ARCH_TYPE}.tar.gz
+    wget https://linux.multitheftauto.com/dl/multitheftauto_linux${ARCH_TYPE}.tar.gz
     wget https://linux.mtasa.com/dl/baseconfig.tar.gz
 }
 
